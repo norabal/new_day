@@ -1,7 +1,5 @@
 # NewDay
 
-![Badge Status](https://ci-as-a-service)
-
 Automatically starts the tasks you need to do when you arrive at my office.
 
 ## Description
