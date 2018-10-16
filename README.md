@@ -41,7 +41,7 @@ if you don't...
 
 ## Usage
 
-$ python /path/to/new_day
+    $ python /path/to/new_day
 
 ## Author
 
