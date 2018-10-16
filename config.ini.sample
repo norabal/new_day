@@ -1,0 +1,22 @@
+[memo]
+memo_dir = ~/memo
+
+[excel]
+excel_dir = ~/excel
+file_name = {year}{month}_work_attendance.xlsx
+
+[ssl]
+target_domains = xxxxxxxx.com,app.xxxxxxxx.com
+
+[twitter]
+# twitter api access configuration
+consumer_key = xxxxxxxx
+consumer_secret = xxxxxxxx
+access_token = xxxxxxxx
+access_token_secret = xxxxxxxx
+
+# Number of tweet to get
+tweet_cnt = 10
+
+# Account name you are following
+screen_name = xxxxxxxx
