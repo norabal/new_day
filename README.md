@@ -11,7 +11,7 @@ Automatically starts the tasks you need to do when you arrive at my office.
 
 ***DEMO:***
 
-![Demo](https://image-url.gif)
+now preparing...
 
 ## Features
 
@@ -23,10 +23,6 @@ Automatically starts the tasks you need to do when you arrive at my office.
 ## Requirement
 
 - Python 3.6.6 or above
-
-## Usage
-
-1. python /path/to/new_day_directory
 
 ## Installation
 
@@ -44,6 +40,10 @@ if you don't...
     $ python3 -m venv venv
     $ source venv/bin/activate
     $ pip install -r requirements.txt
+
+## Usage
+
+$ python /path/to/new_day
 
 ## Author
 
