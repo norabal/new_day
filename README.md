@@ -1,10 +1,8 @@
 # NewDay
 
-Automatically starts the tasks you need to do when you arrive at my office.
-
 ## Description
 
-Automatically starts the tasks you need to do when you arrive at my office.
+Automatically starts the tasks you need to do when you arrive at your office.
 
 
 ***DEMO:***
