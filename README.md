@@ -39,6 +39,9 @@ if you don't...
     $ source venv/bin/activate
     $ pip install -r requirements.txt
 
+After the above processes, copy config.ini.sample as config.ini.
+Then edit it for your environment.
+
 ## Usage
 
     $ python /path/to/new_day
