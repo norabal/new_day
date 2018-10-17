@@ -18,14 +18,15 @@ def _main():
     if memo.is_exist_today_memo():
         print("Today's memo file has been created already.")
     else:
-        print("Today's memo file is not existing. Don't worry, I'll copy the latest memo and create it.")
+        print("Today's memo file does not exist.\n"
+              "The latest memo will be copied.")
         try:
             memo.copy_memo_from_newest()
         except MemoError as err:
             print('Failed to copy memo file: {}'.format(err))
             exit(1)
 
-        print("Did you filled out yesterday's attendance?")
+        print("Did you fill out yesterday's attendance?")
         memo.open_excel()
 
     memo.open_today_memo()
