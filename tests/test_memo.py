@@ -10,7 +10,7 @@ from util import make_empty_dir
 
 
 class MemoTest(BaseTest):
-    test_memo_dir = os.sep.join([TEST_DIR, 'memo'])
+    test_memo_dir = os.path.join(TEST_DIR, 'memo')
 
     @classmethod
     def setUpClass(cls):

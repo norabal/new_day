@@ -14,7 +14,7 @@ class Memo:
         self.excel_dir = adjust_for_expanduser(config.get('excel', 'excel_dir'))
         self.today = datetime.date.today()
         self.new_memo_name = self.today.strftime('%Y%m%d') + '.txt'
-        self.new_memo_path = os.sep.join([self.memo_dir, self.new_memo_name])
+        self.new_memo_path = os.path.join(self.memo_dir, self.new_memo_name)
 
     def open_today_memo(self):
         if self.is_exist_today_memo:
@@ -33,7 +33,7 @@ class Memo:
 
         else:
             lists = sorted(exists, reverse=True)
-            source = os.sep.join([self.memo_dir, lists[0]])
+            source = os.path.join(self.memo_dir, lists[0])
             shutil.copyfile(source, self.new_memo_path)
 
     def create_first_memo(self):
@@ -48,10 +48,7 @@ class Memo:
         year = self.today.strftime('%Y')
         month = self.today.strftime('%m')
         excel_file = self.excel_file.format(year=year, month=month)
-        excel_file_path = os.sep.join([
-            self.excel_dir,
-            excel_file
-        ])
+        excel_file_path = os.path.join(self.excel_dir, excel_file)
         if os.path.exists(excel_file_path):
             os.system('open ' + excel_file_path)
         else:

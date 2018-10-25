@@ -28,5 +28,5 @@ def make_empty_dir(dir_path):
 
 def copy_config_ini_from_sample():
     """'test_config.ini' will be created from 'config.ini.sample'"""
-    source = os.sep.join([ROOT_DIR, 'config.ini.sample'])
+    source = os.path.join(ROOT_DIR, 'config.ini.sample')
     shutil.copyfile(source, TEST_CONFIG_PATH)
