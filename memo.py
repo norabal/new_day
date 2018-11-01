@@ -52,4 +52,4 @@ class Memo:
         if os.path.exists(excel_file_path):
             os.system('open ' + excel_file_path)
         else:
-            raise FileIsNotExistedError("This month's excel file is not created yet")
+            raise FileIsNotExistedError("This month's excel file is not created yet: {}".format(excel_file_path))
