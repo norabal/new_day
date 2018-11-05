@@ -1,5 +1,6 @@
+from norutil.config import get_config
+
 from check_ssl import check_ssl_expire_date
-from config import get_config
 from definitions import CONFIG_PATH
 from exception import MemoError
 from memo import Memo

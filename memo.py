@@ -3,8 +3,9 @@ import glob
 import os
 import shutil
 
+from norutil.util import adjust_for_expanduser
+
 from exception import FileIsNotExistedError
-from util import adjust_for_expanduser
 
 
 class Memo:

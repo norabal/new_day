@@ -2,11 +2,12 @@ import os
 import shutil
 import unittest
 
-from config import get_config
+from norutil.config import get_config
+from norutil.util import make_empty_dir
+
 from definitions import TEST_DIR, TEST_CONFIG_PATH
 from memo import Memo
 from tests.base import BaseTest
-from util import make_empty_dir
 
 
 class MemoTest(BaseTest):
