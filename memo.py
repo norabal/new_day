@@ -5,7 +5,7 @@ import shutil
 
 from norutil.util import adjust_for_expanduser
 
-from exception import FileIsNotExistedError
+from .exception import FileIsNotExistedError
 
 
 class Memo:
