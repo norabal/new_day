@@ -14,7 +14,7 @@ class Memo:
         self.excel_file = config.get('excel', 'file_name')
         self.excel_dir = adjust_for_expanduser(config.get('excel', 'excel_dir'))
         self.today = datetime.date.today()
-        self.new_memo_name = self.today.strftime('%Y%m%d') + '.txt'
+        self.new_memo_name = self.today.strftime('%Y%m%d') + '.md'
         self.new_memo_path = os.path.join(self.memo_dir, self.new_memo_name)
 
     def open_today_memo(self):
