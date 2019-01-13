@@ -1,10 +1,10 @@
 from norutil.config import get_config
 
-from .check_ssl import check_ssl_expire_date
-from .definitions import CONFIG_PATH
-from .exception import MemoError
-from .memo import Memo
-from .twitter import get_twitter
+from check_ssl import check_ssl_expire_date
+from definitions import CONFIG_PATH
+from exception import MemoError
+from memo import Memo
+from twitter import get_twitter
 
 
 def _main():
