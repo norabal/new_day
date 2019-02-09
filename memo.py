@@ -12,6 +12,7 @@ class Memo:
     def __init__(self, config):
         self.memo_dir = adjust_for_expanduser(config.get('memo', 'memo_dir'))
         self.excel_file = config.get('excel', 'file_name')
+        self.website_url = config.get('website', 'url')
         self.excel_dir = adjust_for_expanduser(config.get('excel', 'excel_dir'))
         self.today = datetime.date.today()
         self.new_memo_name = self.today.strftime('%Y%m%d') + '.md'
@@ -46,11 +47,21 @@ class Memo:
 
     def open_excel(self):
         """ex. this month's attendance excel file"""
+        if not self.excel_file:
+            return
+
         year = self.today.strftime('%Y')
         month = self.today.strftime('%m')
         excel_file = self.excel_file.format(year=year, month=month)
         excel_file_path = os.path.join(self.excel_dir, excel_file)
         if os.path.exists(excel_file_path):
-            os.system('open ' + excel_file_path)
+            os.system(f'open {excel_file_path}')
         else:
             raise FileIsNotExistedError("This month's excel file is not created yet: {}".format(excel_file_path))
+
+    def open_website_url(self):
+        """ex. web site url to track your work time"""
+        if not self.website_url:
+            return
+
+        os.system(f'open {self.website_url}')

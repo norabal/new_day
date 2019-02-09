@@ -29,6 +29,7 @@ def _main():
 
         print("Did you fill out yesterday's attendance?")
         memo.open_excel()
+        memo.open_website_url()
 
     memo.open_today_memo()
     exit(0)
