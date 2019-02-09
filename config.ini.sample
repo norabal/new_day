@@ -5,6 +5,9 @@ memo_dir = ~/memo
 excel_dir = ~/excel
 file_name = {year}{month}_work_attendance.xlsx
 
+[website]
+url = <web site url to track your work time>
+
 [ssl]
 target_domains = xxxxxxxx.com,app.xxxxxxxx.com
 
