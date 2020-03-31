@@ -1,7 +1,7 @@
 alabaster==0.7.12
 asn1crypto==0.24.0
 Babel==2.6.0
-bleach==3.0.2
+bleach==3.1.4
 blinker==1.4
 certifi==2018.10.15
 cffi==1.11.5
